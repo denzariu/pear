@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
@@ -26,11 +26,12 @@ const StickyHero = () => {
           markers: false
         } 
       });
+      timeline.seek(16)
 
       timeline.to(phone.current, {
           opacity: 1,
-          duration: 8,
-          delay: 2,
+          duration: 1,
+          delay: 0,
       })
 
       timeline.fromTo(square1.current, {

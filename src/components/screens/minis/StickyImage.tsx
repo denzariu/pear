@@ -1,5 +1,5 @@
 
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -10,7 +10,7 @@ const StickyImage = () => {
   const imageRef = useRef(null);
 
   useEffect(() => {
-    const container = containerRef.current;
+    // const container = containerRef.current;
     const image = imageRef.current;
 
     const tl = gsap.timeline({
