@@ -86,8 +86,7 @@ const StickyElement = () => {
   return (
     <div ref={parent} className='h-[100vh] sm:h-[200vh] font-title font-semibold flex justify-between overflow-hidden'>
       
-      
-      <div className='*:p-2 *:opacity-0  z-20 mt-40'>
+      <div className='*:p-2 *:opacity-0 z-20 mt-40 ml-[-25%] sm:ml-0'>
         <div className="h-fit w-full  bg-red-200  text-2xl sm:text-5xl 2xl:text-7xl" ref={square1}>
           <p>it's pretty.</p>
         </div>
@@ -98,14 +97,14 @@ const StickyElement = () => {
           <p>it's yours.</p>
         </div>
       </div>
-      <div className='h-[100vh] aspect-square -left-[100%] sm:left-0 sm:w-full justify-end absolute bg-black items-end opacity-0 z-0' ref={phone}>
-        <div className='absolute top-0 bottom-0'>
+      <div className='h-[100vh] sm:left-0  w-[100%] absolute bg-black opacity-0 z-0' ref={phone}>
+        <div className='absolute top-0 bottom-0 w-max'>
           <img  src='https://www.apple.com/v/apple-vision-pro/c/images/overview/hero/hero_endframe__dz973mndvu82_large.jpg'
-              className="relative sm:left-[-10%] bottom-auto h-[100%]"
+              className="relative sm:left-[-10%] h-[100%] object-contain self-end bg-red-200"
             />
         </div>
       </div>
-  
+
     </div>
   );
 }

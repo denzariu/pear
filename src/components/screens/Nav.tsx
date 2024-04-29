@@ -6,7 +6,7 @@ function Nav() {
       <div className='p-8 w-[980px] flex justify-between items-center'>
         <a className='text-white font-title font-semibold text-2xl' href='https://denzariu.github.io'>Pear Vision Pro</a>
         <span className='flex items-center'>
-          <ul className='hidden sm:flex flex-row gap-6 items-center'>
+          <ul className='hidden md:flex flex-row gap-6 items-center'>
             <li role='link' className='text-white hover:text-blue-500'><a href='#'>Overview</a></li>
             <li className='text-white hover:text-blue-500'><a>Guided Tour</a></li>
             <li className='text-white hover:text-blue-500'><a>Tech Specs</a></li>

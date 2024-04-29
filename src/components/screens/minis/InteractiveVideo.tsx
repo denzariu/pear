@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const InteractiveVideo = () => {
-  const [link, setLink] = useState("https://cdn-cf-east.streamable.com/video/mp4/hm26qb.mp4?Expires=1713983964471&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=IJEaiiqRidQ~-s25dhljOKTiVAU2bi76lgZTJQAM2YogbxM~qy6g5o3eDe0fsvfhRZCIL6cLMV4tKv68uZHBq09q3tquG-GDzCKpOJ~vXhQa5IqK3UuNNnq1A8WCONo8MGahYRTjQTZPUELFGO28m87hKfwqIFmPvhZs9Mmf~Kx2sz4xgFmpwj1o2opIFNUKPF6c-YS6EdcF8b29BqrcLrDpUU9Ll1FgrBzdQbCCk13j9Bfc5eOHK1sZKiG057tZzG0cfm4HbVDV84-SmSYh~RDWTYzFeEl3DaTB0KK7q2QcEuabs2tKVUD-JH5yJ7DWd1aF5YVveGZ29b2Zgyiwcg__")
+  const link = useState("https://cdn-cf-east.streamable.com/video/mp4/hm26qb.mp4?Expires=1713983964471&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=IJEaiiqRidQ~-s25dhljOKTiVAU2bi76lgZTJQAM2YogbxM~qy6g5o3eDe0fsvfhRZCIL6cLMV4tKv68uZHBq09q3tquG-GDzCKpOJ~vXhQa5IqK3UuNNnq1A8WCONo8MGahYRTjQTZPUELFGO28m87hKfwqIFmPvhZs9Mmf~Kx2sz4xgFmpwj1o2opIFNUKPF6c-YS6EdcF8b29BqrcLrDpUU9Ll1FgrBzdQbCCk13j9Bfc5eOHK1sZKiG057tZzG0cfm4HbVDV84-SmSYh~RDWTYzFeEl3DaTB0KK7q2QcEuabs2tKVUD-JH5yJ7DWd1aF5YVveGZ29b2Zgyiwcg__")
 
   const parent = useRef(null);
   const title = useRef(null);
@@ -70,7 +70,7 @@ const InteractiveVideo = () => {
         muted 
         loop
         autoPlay={true}
-        src={link}
+        src={link[0]}
       />
       <div ref={black} className='absolute top-0 bottom-0 left-0 right-0 bg-black opacity-60'/>
   

@@ -4,6 +4,7 @@ import StickyElement from "./minis/StickyElement";
 import InteractiveVideo from "./minis/InteractiveVideo";
 import InteractiveLines from "./minis/InteractiveLines";
 import { useEffect } from "react";
+import Slices from "./Slices";
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -28,6 +29,8 @@ const Landing = () => {
         <div className="h-full  w-full bg-blue-200 overflow-hidden ">
           <InteractiveLines/>
         </div>
+
+        <Slices/>
    
         <div className="h-full sm:h-[200vh] w-full bg-blue-200 overflow-hidden">
           <StickyElement/>
