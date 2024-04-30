@@ -11,7 +11,6 @@ const StickyElement = () => {
 
   const phone = useRef(null);
   const bg = useRef(null);
-  const bg2 = useRef(null);
 
 
   useLayoutEffect(() => {
@@ -20,7 +19,7 @@ const StickyElement = () => {
       let timeline = gsap.timeline({ 
         scrollTrigger: {
           trigger: parent.current,
-          start: "top 0%", //where it remains hooked, 20% recomm
+          start: "-30vh -30vh", //where it remains hooked, 20% recomm
           // end: "+=3000",
           scrub: true,
           pin: true,
@@ -30,16 +29,7 @@ const StickyElement = () => {
 
 
 
-      timeline.to(bg2.current, {
-        opacity: 1,
-        duration: 9,
-        delay: 0,
-      })
-      timeline.to(bg.current, {
-        opacity: 1,
-        duration: 1,
-        delay: 0,
-      })
+    
       timeline.to(phone.current, {
           opacity: 1,
           duration: 8,
@@ -77,6 +67,12 @@ const StickyElement = () => {
         duration: 6,
         delay: 6
       })
+      timeline.to(bg.current, {
+        opacity: 0,
+        duration: 6,
+        delay: 6
+      })
+
     });
 
     return () => ctx.revert();
@@ -100,7 +96,7 @@ const StickyElement = () => {
       <div className='h-[100vh] sm:left-0  w-[100%] absolute bg-black opacity-0 z-0' ref={phone}>
         <div className='absolute top-0 bottom-0 w-max'>
           <img  src='https://www.apple.com/v/apple-vision-pro/c/images/overview/hero/hero_endframe__dz973mndvu82_large.jpg'
-              className="relative sm:left-[-10%] h-[100%] object-contain self-end bg-red-200"
+              className="relative sm:left-[-10%] h-[100%] object-contain self-end "
             />
         </div>
       </div>

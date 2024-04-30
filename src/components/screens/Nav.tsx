@@ -2,7 +2,7 @@
 function Nav() {
   
   return (
-    <div className='fixed backdrop-blur-md  w-full h-16 z-[200] flex justify-center select-none'>
+    <div className='fixed backdrop-blur-md w-full h-16 z-[200] flex justify-center select-none'>
       <div className='p-8 w-[980px] flex justify-between items-center'>
         <a className='text-white font-title font-semibold text-2xl' href='https://denzariu.github.io'>Pear Vision Pro</a>
         <span className='flex items-center'>
