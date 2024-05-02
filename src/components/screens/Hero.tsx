@@ -31,7 +31,7 @@ const Landing = () => {
         </h2>
 
         <p className="font-semibold text-xl mx-8 sm:text-2xl text-[#86868b] sm:text-center pb-20 max-w-screen-md lg:mx-auto text-balance tracking-[0.011em]">
-          <span className="text-white">Pushing boundaries from the inside out.</span> Spatial experiences on Apple Vision Pro are only possible through groundbreaking Apple technology. Displays the size of a postage stamp that deliver more pixels than a 4K TV to each eye. Incredible advances in Spatial Audio. A revolutionary dual‑chip design featuring custom Apple silicon. A sophisticated array of cameras and sensors. All the elements work together to create an unprecedented experience you have to see to believe.
+          <span className="text-white">Pushing boundaries from the inside out.</span> Spatial experiences on Pear Vision Pro are only possible through groundbreaking Pear technology. Displays the size of a postage stamp that deliver more pixels than a 4K TV to each eye. Incredible advances in Spatial Audio. A revolutionary dual‑chip design featuring custom Pear silicon. A sophisticated array of cameras and sensors. All the elements work together to create an unprecedented experience you have to see to believe.
         </p>
         
         <div className="h-full pt-12 sm:pt-28 lg:pt-0 w-full overflow-hidden ">
